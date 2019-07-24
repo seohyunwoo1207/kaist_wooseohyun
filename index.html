@@ -13,6 +13,7 @@
         h1 {
             border-bottom: 6px black;
             padding: 10px;
+            margin: 30px;
             font-family: 'Signika', sans-serif;
             text-align: center;
 
@@ -24,22 +25,67 @@
 
         #c {
             border-right: 5px solid gray;
-            padding:20px;
-            
+            padding: 20px;
+
         }
 
-        #container {
+        #cd {
             display: grid;
-            grid-template-columns: 50px 1fr 150px;
+            grid-template-columns: 250px auto;
         }
 
         #headline {
             font-size: 15mm;
         }
+
+        #a,
+        #b {
+            display: inline;
+            width: 400px;
+        }
+
+        #a,
+        #b>* {
+            width: 200px;
+        }
+
+        #a>ol+li,
+        #b>ol+li {
+            display: inline;
+        }
+
+        #c {
+            width: 200px;
+        }
+
+        h2 {
+            border: 5px solid gray;
+            padding: 10px;
+            margin: 10px
+        }
+
+        .a {
+            display: inline;
+        }
+
+        div {
+            border: 5px gray
+        }
+
+        .table {
+            display: table;
+            margin: 0 auto;
+            font-size: 45px;
+        }
+
     </style>
 </head>
+<input type="button" value="click here first"
+    onclick="alert('Welcome. Thank you for coming this site. You can find movie clips that you want to enjoy.');">
 
 <body>
+
+
     <h1 id="headline"><a href="http://www.megabox.co.kr/?menuId=movie">Find your lifetime Movie</a> <img class="a"
             width="130px"
             src="https://media.istockphoto.com/vectors/retro-cinema-film-camera-vector-icon-vector-id1011795830" />
@@ -54,112 +100,96 @@
             <input type="text" id="name" name="search_query" required minlength="1" maxlength="10" size="50">
             <input type="submit">
         </form>
+        <div id="cd">
+            <div id="c">
 
-        <style>
-            #a,
-            #b {
-                display: inline;
-                width: 400px;
-            }
+                <div id="a">
+                    <div>
+                        <u>
+                            <h3>Groups</h3>
+                        </u>
+                        <h4>-teasers</h4>
 
-            #a,
-            #b>* {
-                width: 200px;
-            }
 
-            #a>ol+li,
-            #b>ol+li {
-                display: inline;
-            }
-            #c {
-                width: 200px;
-            }
-        </style>
-        
-        <div id="c">
+                        <ol>
 
-            <div id="a">
-                <div> 
+                            <li> <a href="https://www.youtube.com/watch?v=5jLaZuLap50">For teenagers</a></li>
+                            'to all the boys i've loved before'
+                            <li><a href="https://www.youtube.com/watch?v=zON6Mu9_PC0">For families</a></li>
+                            'The incredibles'
+                        </ol>
+                    </div>
+
+                </div>
+                <div>
+                    <div id="b">
+                        <u>
+                            <h3>Genre</h3>
+                        </u>
+                        <h4>-teasers</h4>
+                    </div>
+                    <ol>
+                        <li><a href="https://www.youtube.com/watch?v=lxRrFVn8qUQ">Action comedy</a> </li>
+                        '극한직업'(An extreme job)
+                        <li><a href="https://www.youtube.com/watch?v=9pfVCKaheGQ">SF fantasy</a></li>
+                        'The hungergame'
+                        <li><a href="https://www.youtube.com/watch?v=spQtwggaCy4">Historical</a></li>
+                        '명량'(Roaring Currents)
+                        <li><a href="https://www.youtube.com/watch?v=xCJVR0Us0AI">Horror</a></li>
+                        'insidious'
+                        <li><a href="https://www.youtube.com/watch?v=MQMmng1qGOE">Rommance</a></li>
+                        'begin again'
+                        <li><a href="https://www.youtube.com/watch?v=timw-LXZvUc">Crime</a></li>
+                        '검사외전'(A violent prosecutor)
+                    </ol>
+
                     <u>
-                        <h3>Groups</h3>
+                        <h3>Series Movie</h3>
                     </u>
                     <h4>-teasers</h4>
+                    <li><a href="https://www.warnerbros.com/movies/harry-potter-complete-8-film-collection/">Harry
+                            potter
+                        </a></li>
+                    Harry potter series
+                    <li><a href="https://www.youtube.com/watch?v=EQWqsdOjvG8">Maze runner </a></li>
+                    Maze runner series
+                    <li><a href="https://www.youtube.com/watch?v=WmzSw22kapE">Mission Impossible </a></li>
+                    Mission Impossible Series
+                    <li><a href="https://www.youtube.com/watch?v=-YSrn9rNDDw"> STAR WARS </a></li>
+                    Star wars series
+                    <u>
+                        <h3>MARVEL</h3>
+                    </u>
+                    <h4>-teasers</h4>
+                    <li><a href="https://www.youtube.com/watch?v=D4Z2nEdzkdc">Captain America </a></li>
 
-                
-                    <ol>
+                    <li><a href="https://www.youtube.com/watch?v=hgCmHTDMZig">Iron man </a></li>
+                    <li><a href="https://www.youtube.com/watch?v=EwgGycURKqk">Hulk </a></li>
+                    <li><a href="https://www.youtube.com/watch?v=pxR6cKkPzNo"> Thor </a></li>
+                    <li><a href="https://www.youtube.com/watch?v=PVP5ZJuI57c"> Avengers </a></li>
+                    <li><a href="https://www.youtube.com/watch?v=k0DF4LSG1z8"> Black panther</a></li>
 
-                        <li> <a href="https://www.youtube.com/watch?v=5jLaZuLap50">For teenagers</a></li>
-                        'to all the boys i've loved before'
-                        <li><a href="https://www.youtube.com/watch?v=zON6Mu9_PC0">For families</a></li>
-                        'The incredibles'
-                    </ol>
                 </div>
-            
             </div>
-            <div>            
-                    <div id="b">
-                            <u>
-                                <h3>Genre</h3>
-                            </u>
-                            <h4>-teasers</h4>
-                        </div>    
-                <ol>
-                <li><a href="https://www.youtube.com/watch?v=lxRrFVn8qUQ">Action comedy</a> </li>
-                '극한직업'(An extreme job)
-                <li><a href="https://www.youtube.com/watch?v=9pfVCKaheGQ">SF fantasy</a></li>
-                'The hungergame'
-                <li><a href="https://www.youtube.com/watch?v=spQtwggaCy4">Historical</a></li>
-                '명량'(Roaring Currents)
-                <li><a href="https://www.youtube.com/watch?v=xCJVR0Us0AI">Horror</a></li>
-                'insidious'
-                <li><a href="https://www.youtube.com/watch?v=MQMmng1qGOE">Rommance</a></li>
-                'begin again'
-                <li><a href="https://www.youtube.com/watch?v=timw-LXZvUc">Crime</a></li>
-                '검사외전'(A violent prosecutor)
-            </ol>
-         
-        <u>
-            <h3>Series Movie</h3>
-        </u>
-        <h4>-teasers</h4>
-        <li><a href="https://www.warnerbros.com/movies/harry-potter-complete-8-film-collection/">Harry potter </a></li>
-        Harry potter series
-        <li><a href="https://www.youtube.com/watch?v=EQWqsdOjvG8">Maze runner </a></li>
-        Maze runner series
-        <li><a href="https://www.youtube.com/watch?v=WmzSw22kapE">Mission Impossible </a></li>
-        Mission Impossible Series
-        <li><a href="https://www.youtube.com/watch?v=-YSrn9rNDDw"> STAR WARS </a></li>
-        Star wars series
-        <u>
-            <h3>MARVEL</h3>
-        </u>
-        <h4>-teasers</h4>
-        <li><a href="https://www.youtube.com/watch?v=D4Z2nEdzkdc">Captain America </a></li>
+            <div id="d">
+                    <div class="table">
+                        [TICKETS]
+                        
+                    </div>
+                    <img src="https://mblogthumb-phinf.pstatic.net/20160427_219/ppanppane_14617398834099Y65K_PNG/cgv%252C%25EB%25A9%2594%25EA%25B0%2580%25EB%25B0%2595%25EC%258A%25A4_%25EB%25A1%259C%25EA%25B3%25A0_(2).png?type=w800"
+            height="234px" width="234px">
+                    <img src="https://mblogthumb-phinf.pstatic.net/20160427_63/ppanppane_14617398978718lq9b_PNG/cgv%2C%B8%DE%B0%A1%B9%DA%BD%BA_%B7%CE%B0%ED_%283%29.png?type=w2"
+            height="234px" width="234px">
+            <img src="https://nhanlucnganhluat.vn/uploads/images/D69545BE/logo/2019-04/pictures_library_6235_20180102135750_4563.jpg"
+            height="234px" width="234px">
+            
+                
+            </div>
+        </div>
+        </div>
 
-        <li><a href="https://www.youtube.com/watch?v=hgCmHTDMZig">Iron man </a></li>
-        <li><a href="https://www.youtube.com/watch?v=EwgGycURKqk">Hulk </a></li>
-        <li><a href="https://www.youtube.com/watch?v=pxR6cKkPzNo"> Thor </a></li>
-        <li><a href="https://www.youtube.com/watch?v=PVP5ZJuI57c"> Avengers </a></li>
-        <li><a href="https://www.youtube.com/watch?v=k0DF4LSG1z8"> Black panther</a></li>
-
-    </div>
-</div>
-
-</div>
-</div>
-
-        <style>
-            h2 {
-                border: 5px solid gray;
-                padding: 10px;
-                margin: 10px
-            }
-
-            .a {
-                display: inline;
-            }
-        </style>
-
+        
+        </div>
 </body>
 
 </html>
